@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Lista de Tarefas | Autenticação</title>
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-10 offset-1 text-center mt-5 pb-4 text-primary">
+          <h1 class="h1">Autenticação</h1>
+        </div>
+        <div class="col-10 offset-1 bg-white shadow mb-5 border border-primary">
+          <div class="row">
+            <div
+              id="loginLogo"
+              class="col-6 p-4 bg-primary d-flex justify-content-center"
+            >
+              <img src="./images/firebase_logo.png" alt="Logo Firebase" />
+            </div>
+            <div class="col-6 p-5">
+              <div id="loginForm">
+                <h2 class="h2 text-center text-dark mb-3">Acesso</h2>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Senha</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  onclick="login()"
+                >
+                  Login
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+
+    <script src="./js/init.js"></script>
+    <script src="./js/auth.js"></script>
+  </body>
+</html>

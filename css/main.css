@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+body {
+  font-family: Nunito, sans-serif;
+}
+
+#page {
+  overflow-x: hidden;
+}
+
+#page.toggled #sidebar {
+  margin-left: -15rem;
+}
+
+#sidebar {
+  min-height: 100vh;
+  margin-left: 0;
+  width: 15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar header {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#page-content {
+  min-width: 0;
+  width: 100%;
+}
+
+#loginLogo img {
+  width: 70%;
+}
